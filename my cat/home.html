@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: red;
+      background-color: yellow;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    /* Unvisited link */
+    a:link {
+      color: yellow; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1200px; /* Adjust this value as needed */
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    /* Dropdown menu styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-contents a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-contents a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+  </style>
+</head>
+
+
+<body style="background-image: url('./logo.jpg');">
+<header>
+
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+      <img src="./blue.JPEG" width="90" height="60" alt="Logo">
+    </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./car.php">CAR</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./rental.html">RENTAL</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./customer.html">CUSTOMER</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./insurance.html">INSURANCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./reservation.html">RESERVATION</a></li>
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: pink; background-color: red; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+</header>
+
+<section style="color: blue;">
+  <marquee><h1 style="color: green;">WELCOME TO OUR WEBSITE OF CAR RESERVATION MANAGEMENT SYSTEM </h1></marquee>
+  <h2 style="color: red;"><u>Some Specific Purposes and Objectives of a Car Management System Project:</u></h2>
+  <ol type="number">
+    <li><b>Convenience and Efficiency: Reserve a car anytime and anywhere through an online platform, skipping phone calls and long waits.</b></li> 
+    <li><b>Improved User Experience: Choose the perfect car for their needs based on filters and detailed descriptions.</b></li> 
+    <li><b>Increased Efficiency: Automate the reservation process, reducing manual work and errors.</b></li>
+    <li><b>Enhanced Customer Satisfaction: Offer a user-friendly reservation system that keeps customers happy.</b></li>  
+    <li><b>Improved Fleet Management: Track vehicle availability and optimize resource allocation.</b></li> 
+    <li><b>Purchasing The Products</b></li>
+  </ol>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy; 2024 &reg; Designed by: @ingabire pascaline</h2></b>
+  </center>
+</footer>
+  
+</body>
+</html>

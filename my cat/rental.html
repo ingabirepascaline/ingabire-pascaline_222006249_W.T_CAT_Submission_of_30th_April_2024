@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+    <!-- Defining character encoding -->
+    <meta charset="utf-8">
+    <!-- Setting viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <style>
+        /* Normal link */
+        a {
+            padding: 10px;
+            color: white;
+            background-color: yellow;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        /* Visited link */
+        a:visited {
+            color: green;
+        }
+        /* Unvisited link */
+        a:link {
+            color: olive; /* Changed to lowercase */
+        }
+        /* Hover effect */
+        a:hover {
+            background-color: pink;
+        }
+
+        /* Active link */
+        a:active {
+            background-color: red;
+        }
+
+        /* Extend margin left for search button */
+        button.btn {
+            margin-left: 15px; /* Adjust this value as needed */
+            margin-top: 4px;
+        }
+
+        /* Form styles */
+        form {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="number"] {
+            width: calc(100% - 20px); /* Adjust width as needed */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./car.html">CAR</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./rental.html">RENTAL</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./customer.html">CUSTOMER</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./insurance.html">INSURANCE</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./reservation.html">RESERVATION</a></li>
+        <li class="dropdown" style="display: inline; margin-right: 10px;">
+            <a href="#" style="padding: 10px; color: white; background-color: green; text-decoration: none; margin-right: 15px;">Settings</a>
+            <div class="dropdown-contents">
+                <!-- Links inside the dropdown menu -->
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<section>
+    <h1><u>Rental Form</u></h1>
+    <form method="post" action="order.php">
+        <label for="id">Id:</label>
+        <input type="number" id="id" name="id" required>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+
+        <label for="total_price">Total Price:</label>
+        <input type="text" id="total_price" name="total_price" required>
+
+        <input type="submit" name="add" value="Insert">
+    </form>
+</section>
+
+<footer>
+    <center>
+        <b><h2>UR CBE BIT &copy; 2024 &reg; Designed by: @ingabire pascaline</h2></b>
+    </center>
+</footer>
+</body>
+</html>

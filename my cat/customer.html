@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+    <style>
+        /* Your CSS styles */
+        /* Styles for links */
+        a {
+            padding: 10px;
+            color: blue;
+            background-color: olive;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        /* Styles for dropdown */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-contents a {
+            color: pink;
+            padding: 10px 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-contents a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+
+        /* Styles for form */
+        form {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: blue;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./car.html">CAR</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./rental.html">RENTAL</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./customer.html">CUSTOMER</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./insurance.html">INSURANCE</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="./reservation.html">RESERVATION</a></li>
+        <li class="dropdown" style="display: inline; margin-right: 10px;">
+            <a href="#" style="padding: 10px; color: pink; background-color: blue; text-decoration: none; margin-right: 15px;">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+<center>
+<section>
+    <h1><u>Customer Form</u></h1>
+    <form method="post" action="order.php">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id"><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" id="phone_number" name="phone_number" required><br><br>
+
+        <label for="driver_licence_number">Driver Licence Number:</label>
+        <input type="number" id="driver_licence_number" name="driver_licence_number" required><br><br>
+
+        <input type="submit" name="add" value="Insert"><br><br>
+      
+    </form>
+     </center>
+</section>
+<footer>
+    <center>
+        <b><h2>UR CBE BIT &copy; 2024 &reg; Designed by: @ingabire pascaline</h2></b>
+    </center>
+</footer>
+</body>
+</html>

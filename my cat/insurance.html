@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* Global styles for links */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: silver;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: orange;
+    }
+
+    /* Unvisited link */
+    a:link {
+      color: pink;
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: green;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Styles for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+      background-color: green;
+      border: none;
+      padding: 8px 12px;
+      color: pink;
+      cursor: pointer;
+    }
+
+    /* Styles for form input fields */
+    input.form-control {
+      width: 200px; /* Adjust width as needed */
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Styles for form labels */
+    label {
+      margin-right: 10px;
+      font-weight: bold;
+      background-color: silver;
+    }
+
+    /* Styles for form submit button */
+    input[type="submit"] {
+      background-color: red;
+      border: none;
+      color: yellow;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Styles for footer */
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+
+</header>
+
+<ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./car.html">CAR</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./rental.html">RENTAL</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./customer.html">CUSTOMER</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./insurance.html">INSURANCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./reservation.html">RESERVATION</a></li>
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color: white; background-color: teal; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+            <!-- Links inside the dropdown menu -->
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </li>
+</ul>
+
+<h1><u>Insurance Form</u></h1>
+<form method="post" action="order.php">
+
+<label for="insurance_id">ID:</label>
+<input type="number" id="insurance_id" name="insurance_id" class="form-control"><br>
+
+<label for="type">Type:</label>
+<input type="text" id="type" name="type" required class="form-control"><br>
+
+<label for="coverage_limit">Coverage Limit:</label>
+<input type="number" id="coverage_limit" name="coverage_limit" required class="form-control"><br>
+
+<label for="price">Price:</label>
+<input type="number" id="price" name="price" required class="form-control"><br>
+
+<input type="submit" name="add" value="Insert">
+
+</form>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy; 2024 &reg; Designed by: @ingabire pascaline</h2></b>
+  </center>
+</footer>
+</body>
+</html>

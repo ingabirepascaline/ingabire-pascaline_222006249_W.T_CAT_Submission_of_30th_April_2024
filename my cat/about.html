@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All About System</title>
+  <style>
+    /* General styles */
+    body {
+      background-color: pink;
+    }
+
+    /* Navigation styles */
+    header {
+      background-color: pink;
+      padding: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    a {
+      padding: 10px;
+      color: white;
+      background-color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      min-width: 120px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: pink;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: red;
+      color: yellow;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Section styles */
+    section {
+      padding: 28px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Section heading styles */
+    h2 {
+      color: red;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Text within section */
+    p, h3 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<header>
+  <ul>
+    <li><img src="./logo1.jpg" width="90" height="60" alt="Logo"></li>
+    <li><a href="./home.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+    <li><a href="./car.php">CAR</a></li>
+    <li><a href="./rental.html">RENTAL</a></li>
+    <li><a href="./customer.html">CUSTOMER</a></li>
+    <li><a href="./insurance.html">INSURANCE</a></li>
+    <li><a href="./payment.html">PAYMENT</a></li>
+    <li><a href="./reservation.html">RESERVATION</a></li>
+    <li class="dropdown">
+      <a href="#" style="color: blue;">Settings</a>
+      <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+</header>
+
+<section>
+  <h2><u>Mission of Our System</u></h2>
+  <p><h3>An online car reservation system that connects drivers who rent vehicles to clients who want a vehicle. Using a variety of filters, customers can find the right vehicle, and a chat system would connect hosts directly to customers. Secure payments are also available through the website through digital options.</h3></p>
+  <p><h3>A car reservation system (CRS) is an online or offline software tool that allows customers to book rental vehicles and make reservations. These systems often include features like: Search: Customers can search for cars available for rental at a specific location and date.</h3></p>
+
+  <h2><u>What We Do</u></h2>
+  <p><h3>You can search for available vehicles based on your needs:<br>
+  Dates: Specify the pickup and drop-off dates for your reserve.<br>
+  Location: Choose the location where you want to pick up and return the car. This could be an airport, downtown location, or a specific branch.<br>
+  Car Type: Select the type of vehicle you need, considering factors like size, passenger capacity, and features (e.g., sedan, SUV, truck, convertible, features like GPS navigation, sunroof, etc.).
+  </h3></p>
+  <p><h3>You can view and manage your existing reservations. This might include:<br>
+  Checking your reservation details like dates, car type, pickup/drop-off locations, and rental cost.<br>
+  Making changes to your booking, such as extending the rental period (subject to availability), adding or removing extras like child seats or GPS, or canceling the reservation (adhering to company policies).
+  </h3></p>
+</section>
+
+<footer>
+  <center><b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @ingabire pascaline</h2></b></center>
+</footer>
+
+</body>
+</html>

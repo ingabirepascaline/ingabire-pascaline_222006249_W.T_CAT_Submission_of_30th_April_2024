@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Our Contact Address</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Your existing CSS styles */
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    /* Visited link */
+    a:visited {
+      color: white;
+    }
+    /* Unvisited link */
+    a:link {
+      color: yellow; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 15px; /* Adjust this value as needed */
+      padding: 8px;
+    }
+    section {
+      padding: 10px;
+    }
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block; /* Changed from inline */
+      margin-right: 10px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #ccc; /* Changed hover background color */
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<header>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;">
+      <img src="logo1.jpg" width="90" height="60" alt="Logo">
+    </li>
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./car.php">CAR</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./rental.html">RENTAL</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./customer.html">CUSTOMER</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./insurance.html">INSURANCE</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./payment.html">PAYMENT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./reservation.html">RESERVATION</a></li>
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" class="dropdown-btn">Settings</a>
+      <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+</header>
+
+<section>
+  <h2><u><b>OUR CONTACT US</b></u></h2>
+  <ul>
+    <li>Address: 125 Main Street, Nyarugenge city, State</li>
+    <li>Phone: +250 784432129</li>
+    <li>Email: info@stockmgt.com</li>
+  </ul>
+  <form action="submit_contact" method="POST">
+    <label for="name">Names:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="phone">Telephone:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea> <!-- Fixed textarea tag -->
+    <input type="submit" value="send">
+  </form>
+  <p>Connect with us on social media or social networks:
+    <a href="https://www.twitter.com/stockmgt">Twitter</a>
+    <a href="https://www.facebook.com/stockmgt">Facebook</a>
+    <a href="https://www.instagram.com/stockmgt">Instagram</a>
+    <a href="https://www.linkedin.com/stockmgt">LinkedIn</a>
+  </p>
+</section>
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy; 2024 &reg;, Designed by: @ingabire pascaline</h2></b>
+  </center>
+</footer>
+</body>
+</html>
